@@ -1,0 +1,73 @@
+/* line 1, ../sass/common.scss */
+h1 {
+  font-size: 16px;
+}
+
+/* line 4, ../sass/common.scss */
+h2 {
+  font-size: 14px;
+}
+
+/* line 8, ../sass/common.scss */
+.list-table {
+  border-collapse: collapse;
+}
+
+/* line 11, ../sass/common.scss */
+pre {
+  border: 1px solid #ccc;
+  font-size: 13px;
+  overflow-x: scroll;
+  padding: .5em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 18, ../sass/common.scss */
+  #wrap {
+    margin: 0 auto;
+    width: 960px;
+  }
+
+  /* line 22, ../sass/common.scss */
+  .list-table th {
+    background: #bcdaf5;
+    border: 1px solid #ccc;
+    padding: .5em;
+  }
+
+  /* line 27, ../sass/common.scss */
+  .list-table td {
+    border: 1px solid #ccc;
+    padding: .5em;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 34, ../sass/common.scss */
+  .list-table {
+    border: 1px solid #ccc;
+  }
+
+  /* line 37, ../sass/common.scss */
+  .list-table thead {
+    display: none;
+  }
+
+  /* line 40, ../sass/common.scss */
+  .list-table td {
+    display: block;
+    position: relative;
+    padding: .4em .4em .4em 7em;
+    word-break: break-all;
+  }
+
+  /* line 46, ../sass/common.scss */
+  .list-table td:before {
+    content: attr(data-th) " :";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7em;
+    padding: .4em 0 0 .8em;
+  }
+}

@@ -1,0 +1,55 @@
+h1 {
+	font-size: 16px;
+}
+h2 {
+	font-size: 14px;
+}
+
+.list-table {
+	border-collapse: collapse;
+}
+pre {
+	border: 1px solid #ccc;
+	font-size: 13px;
+	overflow-x: scroll;
+	padding: .5em;
+}
+@media screen and (min-width: 768px) {
+	#wrap {
+		margin: 0 auto;
+		width: 960px;
+	}
+	.list-table th {
+		background: #bcdaf5;
+		border: 1px solid #ccc;
+		padding: .5em;
+	}
+	.list-table td {
+		border: 1px solid #ccc;
+		padding: .5em;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.list-table {
+		border: 1px solid #ccc;
+	}
+	.list-table thead {
+		display: none;
+	}
+	.list-table td {
+		display: block;
+		position: relative;
+		padding: .4em .4em .4em 7em;
+		word-break: break-all;
+	}
+	.list-table td:before {
+		content: attr(data-th) " :";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 7em;
+		padding: .4em 0 0 .8em;
+	}
+}

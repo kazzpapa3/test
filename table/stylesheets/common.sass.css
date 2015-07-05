@@ -1,0 +1,6 @@
+@media screen and (max-width: 767px) {
+  /* line 2, ../sass/common.sass.scss */
+  .list-table thead {
+    display: none;
+  }
+}
